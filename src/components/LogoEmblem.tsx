@@ -30,24 +30,24 @@ export const LogoEmblem: React.FC<LogoEmblemProps> = ({
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" className={className}>
         <defs>
           <radialGradient id="cyberBg" cx="50%" cy="40%" r="60%">
-            <stop offset="0%" stop-color="#16122e"/>
-            <stop offset="65%" stop-color="#090714"/>
-            <stop offset="100%" stop-color="#040308"/>
+            <stop offset="0%" stopColor="#16122e"/>
+            <stop offset="65%" stopColor="#090714"/>
+            <stop offset="100%" stopColor="#040308"/>
           </radialGradient>
           <linearGradient id="cyberCyan" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#7df9ff"/>
-            <stop offset="50%" stop-color="#00d2ff"/>
-            <stop offset="100%" stop-color="#0077ff"/>
+            <stop offset="0%" stopColor="#7df9ff"/>
+            <stop offset="50%" stopColor="#00d2ff"/>
+            <stop offset="100%" stopColor="#0077ff"/>
           </linearGradient>
           <linearGradient id="cyberViolet" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#ff4df0"/>
-            <stop offset="50%" stop-color="#b5179e"/>
-            <stop offset="100%" stop-color="#480ca8"/>
+            <stop offset="0%" stopColor="#ff4df0"/>
+            <stop offset="50%" stopColor="#b5179e"/>
+            <stop offset="100%" stopColor="#480ca8"/>
           </linearGradient>
           <linearGradient id="cyberNeonRim" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#00f5d4"/>
-            <stop offset="50%" stop-color="#7209b7"/>
-            <stop offset="100%" stop-color="#f72585"/>
+            <stop offset="0%" stopColor="#00f5d4"/>
+            <stop offset="50%" stopColor="#7209b7"/>
+            <stop offset="100%" stopColor="#f72585"/>
           </linearGradient>
           <filter id="cyberGlow" x="-20%" y="-20%" width="140%" height="140%">
             <feGaussianBlur stdDeviation="8" result="blur"/>
@@ -55,12 +55,12 @@ export const LogoEmblem: React.FC<LogoEmblemProps> = ({
           </filter>
         </defs>
         <circle cx="250" cy="250" r="240" fill="url(#cyberBg)"/>
-        <circle cx="250" cy="250" r="238" fill="none" stroke="url(#cyberNeonRim)" stroke-width="2.5"/>
-        <circle cx="250" cy="250" r="230" fill="none" stroke="#00f5d4" stroke-width="1" stroke-opacity="0.2"/>
+        <circle cx="250" cy="250" r="238" fill="none" stroke="url(#cyberNeonRim)" strokeWidth="2.5"/>
+        <circle cx="250" cy="250" r="230" fill="none" stroke="#00f5d4" strokeWidth="1" strokeOpacity="0.2"/>
         
         {/* Hexagonal Isometric Grid */}
         <polygon points="250,56 418,153 418,347 250,444 82,347 82,153" 
-                 fill="none" stroke="#7209b7" stroke-width="1.8" stroke-opacity="0.4" stroke-dasharray="6 6"/>
+                 fill="none" stroke="#7209b7" strokeWidth="1.8" strokeOpacity="0.4" strokeDasharray="6 6"/>
         
         {/* Monogram AP in Cyber Wave */}
         <g filter="url(#cyberGlow)">
@@ -86,33 +86,33 @@ export const LogoEmblem: React.FC<LogoEmblemProps> = ({
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" className={className}>
         <defs>
           <radialGradient id="monoBg" cx="50%" cy="40%" r="60%">
-            <stop offset="0%" stop-color="#18181b"/>
-            <stop offset="65%" stop-color="#09090b"/>
-            <stop offset="100%" stop-color="#020203"/>
+            <stop offset="0%" stopColor="#18181b"/>
+            <stop offset="65%" stopColor="#09090b"/>
+            <stop offset="100%" stopColor="#020203"/>
           </radialGradient>
           <linearGradient id="tiLight" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#ffffff"/>
-            <stop offset="40%" stop-color="#cbd5e1"/>
-            <stop offset="80%" stop-color="#94a3b8"/>
-            <stop offset="100%" stop-color="#475569"/>
+            <stop offset="0%" stopColor="#ffffff"/>
+            <stop offset="40%" stopColor="#cbd5e1"/>
+            <stop offset="80%" stopColor="#94a3b8"/>
+            <stop offset="100%" stopColor="#475569"/>
           </linearGradient>
           <linearGradient id="tiDark" x1="0%" y1="100%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#1e293b"/>
-            <stop offset="60%" stop-color="#334155"/>
-            <stop offset="100%" stop-color="#64748b"/>
+            <stop offset="0%" stopColor="#1e293b"/>
+            <stop offset="60%" stopColor="#334155"/>
+            <stop offset="100%" stopColor="#64748b"/>
           </linearGradient>
           <linearGradient id="monoRim" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#f8fafc"/>
-            <stop offset="50%" stop-color="#475569"/>
-            <stop offset="100%" stop-color="#cbd5e1"/>
+            <stop offset="0%" stopColor="#f8fafc"/>
+            <stop offset="50%" stopColor="#475569"/>
+            <stop offset="100%" stopColor="#cbd5e1"/>
           </linearGradient>
         </defs>
         <circle cx="250" cy="250" r="240" fill="url(#monoBg)"/>
-        <circle cx="250" cy="250" r="238" fill="none" stroke="url(#monoRim)" stroke-width="2.5"/>
-        <circle cx="250" cy="250" r="230" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.1"/>
+        <circle cx="250" cy="250" r="238" fill="none" stroke="url(#monoRim)" strokeWidth="2.5"/>
+        <circle cx="250" cy="250" r="230" fill="none" stroke="#ffffff" strokeWidth="1" strokeOpacity="0.1"/>
         
         {/* Precision aperture ticks */}
-        <g stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.3">
+        <g stroke="#ffffff" strokeWidth="1.5" strokeOpacity="0.3">
           <line x1="250" y1="14" x2="250" y2="24"/>
           <line x1="250" y1="476" x2="250" y2="486"/>
           <line x1="14" y1="250" x2="24" y2="250"/>
@@ -120,7 +120,7 @@ export const LogoEmblem: React.FC<LogoEmblemProps> = ({
         </g>
         
         <polygon points="250,56 418,153 418,347 250,444 82,347 82,153" 
-                 fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-opacity="0.25"/>
+                 fill="none" stroke="#94a3b8" strokeWidth="1.5" strokeOpacity="0.25"/>
         
         {/* Monogram AP in Pure Titanium */}
         <g>
@@ -145,33 +145,33 @@ export const LogoEmblem: React.FC<LogoEmblemProps> = ({
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" className={className}>
         <defs>
           <radialGradient id="solarBg" cx="50%" cy="40%" r="60%">
-            <stop offset="0%" stop-color="#2a0f12"/>
-            <stop offset="65%" stop-color="#120507"/>
-            <stop offset="100%" stop-color="#050102"/>
+            <stop offset="0%" stopColor="#2a0f12"/>
+            <stop offset="65%" stopColor="#120507"/>
+            <stop offset="100%" stopColor="#050102"/>
           </radialGradient>
           <linearGradient id="solarRed" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#ff7b54"/>
-            <stop offset="40%" stop-color="#ff2e63"/>
-            <stop offset="80%" stop-color="#990033"/>
-            <stop offset="100%" stop-color="#55001a"/>
+            <stop offset="0%" stopColor="#ff7b54"/>
+            <stop offset="40%" stopColor="#ff2e63"/>
+            <stop offset="80%" stopColor="#990033"/>
+            <stop offset="100%" stopColor="#55001a"/>
           </linearGradient>
           <linearGradient id="solarGold" x1="0%" y1="100%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#ff2e63"/>
-            <stop offset="60%" stop-color="#ff9900"/>
-            <stop offset="100%" stop-color="#ffe600"/>
+            <stop offset="0%" stopColor="#ff2e63"/>
+            <stop offset="60%" stopColor="#ff9900"/>
+            <stop offset="100%" stopColor="#ffe600"/>
           </linearGradient>
           <linearGradient id="solarRim" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#ff7b54"/>
-            <stop offset="50%" stop-color="#ff2e63"/>
-            <stop offset="100%" stop-color="#ffb703"/>
+            <stop offset="0%" stopColor="#ff7b54"/>
+            <stop offset="50%" stopColor="#ff2e63"/>
+            <stop offset="100%" stopColor="#ffb703"/>
           </linearGradient>
         </defs>
         <circle cx="250" cy="250" r="240" fill="url(#solarBg)"/>
-        <circle cx="250" cy="250" r="238" fill="none" stroke="url(#solarRim)" stroke-width="2.5"/>
-        <circle cx="250" cy="250" r="230" fill="none" stroke="#ff2e63" stroke-width="1" stroke-opacity="0.2"/>
+        <circle cx="250" cy="250" r="238" fill="none" stroke="url(#solarRim)" strokeWidth="2.5"/>
+        <circle cx="250" cy="250" r="230" fill="none" stroke="#ff2e63" strokeWidth="1" strokeOpacity="0.2"/>
         
         <polygon points="250,56 418,153 418,347 250,444 82,347 82,153" 
-                 fill="none" stroke="#ff2e63" stroke-width="1.8" stroke-opacity="0.3" stroke-dasharray="6 6"/>
+                 fill="none" stroke="#ff2e63" strokeWidth="1.8" strokeOpacity="0.3" strokeDasharray="6 6"/>
         
         {/* Monogram AP in Solar Crimson & Amber */}
         <g>
@@ -195,53 +195,53 @@ export const LogoEmblem: React.FC<LogoEmblemProps> = ({
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" className={className}>
       <defs>
         <radialGradient id="goldBgCore" cx="50%" cy="40%" r="60%">
-          <stop offset="0%" stop-color="#1c1d24"/>
-          <stop offset="65%" stop-color="#0c0d10"/>
-          <stop offset="100%" stop-color="#050507"/>
+          <stop offset="0%" stopColor="#1c1d24"/>
+          <stop offset="65%" stopColor="#0c0d10"/>
+          <stop offset="100%" stopColor="#050507"/>
         </radialGradient>
         <linearGradient id="goldRimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#ffd572" stop-opacity="0.9"/>
-          <stop offset="25%" stop-color="#9d7e3a" stop-opacity="0.4"/>
-          <stop offset="50%" stop-color="#ffffff" stop-opacity="0.8"/>
-          <stop offset="75%" stop-color="#6e5726" stop-opacity="0.3"/>
-          <stop offset="100%" stop-color="#f5c253" stop-opacity="0.85"/>
+          <stop offset="0%" stopColor="#ffd572" stopOpacity="0.9"/>
+          <stop offset="25%" stopColor="#9d7e3a" stopOpacity="0.4"/>
+          <stop offset="50%" stopColor="#ffffff" stopOpacity="0.8"/>
+          <stop offset="75%" stopColor="#6e5726" stopOpacity="0.3"/>
+          <stop offset="100%" stopColor="#f5c253" stopOpacity="0.85"/>
         </linearGradient>
         <linearGradient id="goldBrightFace" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#fff4cf"/>
-          <stop offset="35%" stop-color="#ffcc52"/>
-          <stop offset="70%" stop-color="#df9f28"/>
-          <stop offset="100%" stop-color="#9e680e"/>
+          <stop offset="0%" stopColor="#fff4cf"/>
+          <stop offset="35%" stopColor="#ffcc52"/>
+          <stop offset="70%" stopColor="#df9f28"/>
+          <stop offset="100%" stopColor="#9e680e"/>
         </linearGradient>
         <linearGradient id="goldDeepFace" x1="0%" y1="100%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#5a3806"/>
-          <stop offset="50%" stop-color="#a47118"/>
-          <stop offset="100%" stop-color="#e0a734"/>
+          <stop offset="0%" stopColor="#5a3806"/>
+          <stop offset="50%" stopColor="#a47118"/>
+          <stop offset="100%" stopColor="#e0a734"/>
         </linearGradient>
         <linearGradient id="tiDarkFacet" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#464955"/>
-          <stop offset="45%" stop-color="#2a2c35"/>
-          <stop offset="100%" stop-color="#14151b"/>
+          <stop offset="0%" stopColor="#464955"/>
+          <stop offset="45%" stopColor="#2a2c35"/>
+          <stop offset="100%" stopColor="#14151b"/>
         </linearGradient>
         <linearGradient id="tiLightFacet" x1="0%" y1="100%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#2a2c35"/>
-          <stop offset="60%" stop-color="#5a5e6f"/>
-          <stop offset="100%" stop-color="#8b90a6"/>
+          <stop offset="0%" stopColor="#2a2c35"/>
+          <stop offset="60%" stopColor="#5a5e6f"/>
+          <stop offset="100%" stopColor="#8b90a6"/>
         </linearGradient>
         <radialGradient id="goldAmbientGlow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#ffb726" stop-opacity="0.35"/>
-          <stop offset="40%" stop-color="#ff8c00" stop-opacity="0.12"/>
-          <stop offset="100%" stop-color="#ff6a00" stop-opacity="0"/>
+          <stop offset="0%" stopColor="#ffb726" stopOpacity="0.35"/>
+          <stop offset="40%" stopColor="#ff8c00" stopOpacity="0.12"/>
+          <stop offset="100%" stopColor="#ff6a00" stopOpacity="0"/>
         </radialGradient>
       </defs>
 
       {/* Outer Disc */}
       <circle cx="250" cy="250" r="240" fill="url(#goldBgCore)"/>
-      <circle cx="250" cy="250" r="239" fill="none" stroke="url(#goldRimGrad)" stroke-width="2.5"/>
-      <circle cx="250" cy="250" r="230" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.07"/>
-      <circle cx="250" cy="250" r="226" fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.6"/>
+      <circle cx="250" cy="250" r="239" fill="none" stroke="url(#goldRimGrad)" strokeWidth="2.5"/>
+      <circle cx="250" cy="250" r="230" fill="none" stroke="#ffffff" strokeWidth="1" strokeOpacity="0.07"/>
+      <circle cx="250" cy="250" r="226" fill="none" stroke="#000000" strokeWidth="2" strokeOpacity="0.6"/>
 
       {/* Aperture marks */}
-      <g stroke="#ffd572" stroke-width="1.5" stroke-opacity="0.3">
+      <g stroke="#ffd572" strokeWidth="1.5" strokeOpacity="0.3">
         <line x1="250" y1="14" x2="250" y2="24"/>
         <line x1="250" y1="476" x2="250" y2="486"/>
         <line x1="14" y1="250" x2="24" y2="250"/>
@@ -252,7 +252,7 @@ export const LogoEmblem: React.FC<LogoEmblemProps> = ({
 
       {/* Hexagonal Shutter Frame */}
       <polygon points="250,56 418,153 418,347 250,444 82,347 82,153" 
-               fill="none" stroke="url(#goldRimGrad)" stroke-width="1.8" stroke-opacity="0.3" stroke-dasharray="8 6"/>
+               fill="none" stroke="url(#goldRimGrad)" strokeWidth="1.8" strokeOpacity="0.3" strokeDasharray="8 6"/>
 
       {/* Interlocking 3D "AP" */}
       <g>
