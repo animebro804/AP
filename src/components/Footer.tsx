@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Logo } from './Logo';
 import { brandInfo, socialLinks } from '../data/studioData';
-import { ArrowUp, Instagram, Youtube, Facebook, Palette } from 'lucide-react';
+import { ArrowUp, Instagram, Youtube, Facebook, Palette, Mail } from 'lucide-react';
 import { LogoCustomizerModal } from './LogoCustomizerModal';
 
 export const Footer: React.FC = () => {
@@ -80,9 +80,20 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Copyright & Social Row */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-400">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-400">
           <div>
             © {brandInfo.copyrightYear} {brandInfo.name}. All rights reserved.
+          </div>
+
+          <div className="flex items-center gap-2">
+            <a 
+              href={`mailto:${brandInfo.contactEmail}`}
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-white border border-white/10 transition-colors"
+              title="Direct Email Studio"
+            >
+              <Mail className="w-3.5 h-3.5 text-amber-400" />
+              <span>{brandInfo.contactEmail}</span>
+            </a>
           </div>
 
           <div className="flex items-center gap-6">

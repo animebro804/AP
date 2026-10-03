@@ -94,40 +94,59 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ externalMessage,
             Have an idea, project or collaboration in mind? Let’s turn it into a visual experience.
           </p>
 
-          {/* Studio Direct Inbox Box (Editable Information) */}
-          <div className="p-6 rounded-2xl bg-[#0d0e13] border border-white/10 space-y-4 shadow-xl">
-            <div className="text-xs font-mono uppercase tracking-wider text-zinc-400">
-              Direct Studio Contact
+          {/* Studio Direct Inbox Box (Official Gmail Contact) */}
+          <div className="p-6 rounded-2xl bg-[#0d0e13] border border-amber-500/25 space-y-4 shadow-xl">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono uppercase tracking-wider text-amber-300 font-semibold flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                <span>Official Client Gmail</span>
+              </span>
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+                Active for Commissions
+              </span>
             </div>
 
-            <div className="flex items-center justify-between gap-4 p-3 rounded-xl bg-black/40 border border-white/5">
-              <div className="flex items-center gap-3 overflow-hidden">
-                <div className="w-9 h-9 rounded-lg bg-zinc-900 border border-white/10 flex items-center justify-center shrink-0">
-                  <Mail className="w-4 h-4 text-white" />
+            <div className="p-4 rounded-xl bg-black/60 border border-white/10 space-y-3">
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3 overflow-hidden">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0 text-amber-400">
+                    <Mail className="w-5 h-5" />
+                  </div>
+                  <div className="truncate">
+                    <span className="text-[10px] font-mono text-zinc-400 block uppercase tracking-wider">Direct Studio Inbox</span>
+                    <a 
+                      href={`mailto:${brandInfo.contactEmail}?subject=Video%20Production%20Inquiry%20-%20AP%20Visuals`}
+                      className="text-base font-bold text-white hover:text-amber-300 truncate block transition-colors tracking-wide"
+                    >
+                      {brandInfo.contactEmail}
+                    </a>
+                  </div>
                 </div>
-                <div className="truncate">
-                  <span className="text-[11px] font-mono text-zinc-400 block uppercase">Official Email</span>
-                  <a 
-                    href={`mailto:${brandInfo.contactEmail}`}
-                    className="text-sm font-semibold text-white hover:text-zinc-300 truncate block transition-colors"
-                  >
-                    {brandInfo.contactEmail}
-                  </a>
-                </div>
+
+                <button
+                  type="button"
+                  onClick={handleCopyEmail}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-zinc-200 hover:text-white text-xs font-mono transition-colors shrink-0"
+                  title="Copy email to clipboard"
+                >
+                  {copiedEmail ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
+                  <span>{copiedEmail ? 'Copied!' : 'Copy'}</span>
+                </button>
               </div>
 
-              <button
-                type="button"
-                onClick={handleCopyEmail}
-                className="p-2 text-zinc-400 hover:text-white rounded-lg hover:bg-white/10 transition-colors shrink-0"
-                title="Copy email to clipboard"
+              {/* Direct 1-Click Launch Button for Clients */}
+              <a
+                href={`mailto:${brandInfo.contactEmail}?subject=Video%20Production%20Commission%20-%20AP%20Visuals&body=Hi%20AP%20Visuals%20Team%2C%0A%0AI%20would%20like%20to%20commission%20a%20video%20production%20with%20your%20studio.%0A%0AProject%20Type%3A%20%0AEstimated%20Duration%3A%20%0ABudget%20%2F%20Timeline%3A%20%0A%0AThank%20you!`}
+                className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-black font-bold text-xs font-mono uppercase tracking-wider transition-colors shadow-md"
               >
-                {copiedEmail ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
-              </button>
+                <Mail className="w-4 h-4" />
+                <span>Launch Gmail / Mail App to Commission Video</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </a>
             </div>
 
-            <p className="text-xs text-zinc-400 font-mono">
-              Typical turnaround: within 24 hours for creative briefings and proposal reviews.
+            <p className="text-xs text-zinc-400 font-mono leading-relaxed">
+              Direct inbox monitored daily. Clients can reach out for video production, 3D character animation, and VFX briefs.
             </p>
           </div>
         </div>
@@ -147,13 +166,23 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ externalMessage,
                 <p className="text-zinc-300 text-sm max-w-md mx-auto leading-relaxed">
                   Thank you for reaching out to AP Visuals. Our creative team will review your brief and reply to your inbox shortly.
                 </p>
-                <button
-                  type="button"
-                  onClick={() => setIsSubmitted(false)}
-                  className="mt-4 px-6 py-2.5 rounded-full text-xs font-mono uppercase tracking-widest bg-white text-black font-semibold hover:bg-zinc-200 transition-colors"
-                >
-                  Send Another Inquiry
-                </button>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+                  <a
+                    href={`mailto:${brandInfo.contactEmail}?subject=Direct%20Inquiry%20from%20Website&body=Hi%20AP%20Visuals%2C%0A%0AWe%20would%20like%20to%20discuss%20a%20video%20production%20project.`}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-mono uppercase tracking-wider bg-amber-400 hover:bg-amber-300 text-black font-bold transition-colors shadow-md"
+                  >
+                    <Mail className="w-3.5 h-3.5" />
+                    <span>Also Send in Gmail ({brandInfo.contactEmail})</span>
+                  </a>
+
+                  <button
+                    type="button"
+                    onClick={() => setIsSubmitted(false)}
+                    className="px-5 py-2.5 rounded-full text-xs font-mono uppercase tracking-widest bg-white/10 text-white font-semibold hover:bg-white/20 transition-colors"
+                  >
+                    Send Another Inquiry
+                  </button>
+                </div>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">

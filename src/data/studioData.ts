@@ -44,7 +44,7 @@ export const brandInfo: BrandConfig = {
   badge: "AI-POWERED CREATIVE STUDIO",
   aboutHeading: "Where Creativity Meets AI",
   aboutText: "AP Visuals combines creative storytelling with modern AI technology to produce visual content that feels cinematic, imaginative and memorable. Our team experiments with AI animation, VFX, miniature worlds and digital storytelling to turn concepts into engaging visual experiences.",
-  contactEmail: "hello@apvisuals.com", // [EDIT HERE: Replace with your actual email address]
+  contactEmail: "anime.bro804@gmail.com", // Official Studio Gmail for video commissions & client inquiries
   copyrightYear: 2026,
 };
 
