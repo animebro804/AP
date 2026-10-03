@@ -1,0 +1,6 @@
+{
+  "name": "AP Visuals",
+  "description": "A modern AI-powered visual production studio creating cinematic AI videos, animations, VFX, miniature ASMR, and high-quality digital content.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

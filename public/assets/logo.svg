@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Deep Obsidian Matte with subtle spotlight -->
+    <radialGradient id="apBadgeBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1c1d24"/>
+      <stop offset="65%" stop-color="#0c0d10"/>
+      <stop offset="100%" stop-color="#050507"/>
+    </radialGradient>
+
+    <!-- Outer Rim Metallic Gold-Titanium Stroke -->
+    <linearGradient id="apRimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd572" stop-opacity="0.9"/>
+      <stop offset="25%" stop-color="#9d7e3a" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="75%" stop-color="#6e5726" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f5c253" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Primary Gold Gradient (Facet Highlights) -->
+    <linearGradient id="goldBright" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff4cf"/>
+      <stop offset="35%" stop-color="#ffcc52"/>
+      <stop offset="70%" stop-color="#df9f28"/>
+      <stop offset="100%" stop-color="#9e680e"/>
+    </linearGradient>
+
+    <!-- Secondary Rich Amber / Bronze Gradient (Facet Depth) -->
+    <linearGradient id="goldDepth" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5a3806"/>
+      <stop offset="50%" stop-color="#a47118"/>
+      <stop offset="100%" stop-color="#e0a734"/>
+    </linearGradient>
+
+    <!-- Titanium Dark Metallic Gradient -->
+    <linearGradient id="titaniumDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#464955"/>
+      <stop offset="45%" stop-color="#2a2c35"/>
+      <stop offset="100%" stop-color="#14151b"/>
+    </linearGradient>
+
+    <!-- Titanium Light Reflection -->
+    <linearGradient id="titaniumLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a2c35"/>
+      <stop offset="60%" stop-color="#5a5e6f"/>
+      <stop offset="100%" stop-color="#8b90a6"/>
+    </linearGradient>
+
+    <!-- Ambient Center Flare -->
+    <radialGradient id="apCoreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb726" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#ff8c00" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ff6a00" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Drop Shadows for 3D Chiseled Layering -->
+    <filter id="chiselShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 1. Outer Dark Circular Disc / Shield -->
+  <circle cx="250" cy="250" r="240" fill="url(#apBadgeBg)"/>
+  
+  <!-- Outer Bevel Rings -->
+  <circle cx="250" cy="250" r="239" fill="none" stroke="url(#apRimGrad)" stroke-width="2.5"/>
+  <circle cx="250" cy="250" r="230" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.07"/>
+  <circle cx="250" cy="250" r="226" fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.6"/>
+
+  <!-- Cinema Calibration Aperture Marks around circumference -->
+  <g stroke="#ffd572" stroke-width="1.5" stroke-opacity="0.25">
+    <line x1="250" y1="14" x2="250" y2="24"/>
+    <line x1="250" y1="476" x2="250" y2="486"/>
+    <line x1="14" y1="250" x2="24" y2="250"/>
+    <line x1="476" y1="250" x2="486" y2="250"/>
+    <line x1="83" y1="83" x2="91" y2="91"/>
+    <line x1="417" y1="83" x2="409" y2="91"/>
+    <line x1="83" y1="417" x2="91" y2="409"/>
+    <line x1="417" y1="417" x2="409" y2="409"/>
+  </g>
+
+  <!-- Central Warm Atmospheric Glow -->
+  <circle cx="250" cy="245" r="160" fill="url(#apCoreGlow)" />
+
+  <!-- 2. Hexagonal Dynamic Shutter / Iris Frame -->
+  <polygon points="250,56 418,153 418,347 250,444 82,347 82,153" 
+           fill="none" 
+           stroke="url(#apRimGrad)" 
+           stroke-width="1.8" 
+           stroke-opacity="0.3"
+           stroke-dasharray="8 6"/>
+
+  <!-- 3. Interlocking 3D "AP" Geometric Monogram -->
+  <g filter="url(#chiselShadow)">
+    
+    <!-- === BACK FACETS / TITANIUM DEPTH === -->
+    <!-- Left Stanchion Depth of 'A' -->
+    <path d="M 120,380 L 175,380 L 230,240 L 205,240 Z" fill="url(#titaniumDark)"/>
+    
+    <!-- Central Bridge Shadow -->
+    <path d="M 185,275 L 290,275 L 275,305 L 170,305 Z" fill="#0c0d12"/>
+
+    <!-- === LETTER 'A' SCULPTED GEOMETRY === -->
+    <!-- Left Ascending Stem (Warm Gold Radiant Facet) -->
+    <path d="M 120,380 L 165,380 L 250,140 L 215,140 Z" fill="url(#goldBright)"/>
+    
+    <!-- Left Stem Outer Chiseled Bevel -->
+    <path d="M 120,380 L 138,380 L 222,140 L 215,140 Z" fill="#fff7d6" opacity="0.6"/>
+
+    <!-- Right Apex Connector -->
+    <path d="M 215,140 L 250,140 L 285,230 L 255,230 Z" fill="url(#goldDepth)"/>
+
+    <!-- Crossbar of 'A' (Forward-angled speed wing) -->
+    <path d="M 168,268 L 295,268 L 282,298 L 155,298 Z" fill="url(#goldBright)"/>
+    <path d="M 168,268 L 295,268 L 290,274 L 163,274 Z" fill="#fff9e6" opacity="0.7"/>
+
+    <!-- === LETTER 'P' INTEGRATION & APERTURE SWEEP === -->
+    <!-- Right Spine of 'P' (Titanium & Champagne Gold) -->
+    <path d="M 250,140 L 285,140 L 285,380 L 250,380 Z" fill="url(#titaniumLight)"/>
+    <path d="M 280,140 L 285,140 L 285,380 L 280,380 Z" fill="#ffffff" opacity="0.4"/>
+
+    <!-- Outer 'P' Upper Loop Curve (Bold sweep wrapping around) -->
+    <path d="M 285,140 C 355,140 385,175 385,225 C 385,275 350,305 285,305 L 285,268 C 328,268 348,252 348,225 C 348,195 328,177 285,177 Z" 
+          fill="url(#goldBright)"/>
+
+    <!-- 'P' Loop Bevel Highlight Curve -->
+    <path d="M 285,140 C 355,140 385,175 385,225 C 385,235 380,240 376,232 C 372,185 345,150 285,147 Z" 
+          fill="#ffffff" 
+          opacity="0.6"/>
+
+    <!-- 'P' Loop Underside Shadow Facet -->
+    <path d="M 285,305 C 330,305 365,285 378,250 C 368,280 335,296 285,296 Z" 
+          fill="#4d3208"/>
+
+    <!-- Dynamic Cutout / Negative Space Prism Core -->
+    <polygon points="230,195 268,195 250,242" fill="#0c0d10"/>
+
+    <!-- Inner Aperture Iris Blade (Lens flare segment) -->
+    <path d="M 285,215 L 340,190 L 325,235 Z" fill="url(#goldDepth)" opacity="0.9"/>
+  </g>
+
+  <!-- 4. Central Optical Lens Flare / Sparkle -->
+  <g filter="url(#subtleGlow)">
+    <!-- Small brilliant white-gold starburst flare at the vertex intersection -->
+    <circle cx="250" cy="140" r="5" fill="#ffffff"/>
+    <ellipse cx="250" cy="140" rx="26" ry="1.5" fill="#fff5d1" opacity="0.9"/>
+    <ellipse cx="250" cy="140" rx="1.5" ry="26" fill="#fff5d1" opacity="0.9"/>
+    
+    <circle cx="348" cy="225" r="2.5" fill="#ffffff" opacity="0.8"/>
+    <ellipse cx="348" cy="225" rx="14" ry="1" fill="#ffd97d" opacity="0.7"/>
+  </g>
+
+  <!-- Fine micro-typography on bottom arc -->
+  <text fill="#ffffff" fill-opacity="0.35" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="4">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">
+      AI • ANIMATION • VFX STUDIO
+    </textPath>
+  </text>
+</svg>
